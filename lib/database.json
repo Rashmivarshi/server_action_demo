@@ -1,31 +1,7 @@
 {
-  "1": {
-    "id": 1,
-    "name": "Fix Next.js API Route bug",
-    "status": "open",
-    "type": "bug"
-  },
-  "2": {
-    "id": 2,
-    "name": "Fix React Native bug",
-    "status": "open",
-    "type": "bug"
-  },
   "3": {
     "id": 3,
     "name": "Fix TypeScript bug",
-    "status": "open",
-    "type": "feature"
-  },
-  "4": {
-    "id": 4,
-    "name": "Fix GraphQL bug",
-    "status": "open",
-    "type": "bug"
-  },
-  "5": {
-    "id": 5,
-    "name": "Fix GraphQL bug",
     "status": "open",
     "type": "feature"
   },
@@ -34,5 +10,11 @@
     "name": "learn server action",
     "status": "open",
     "type": "next js"
+  },
+  "7": {
+    "id": 7,
+    "name": "next js bug",
+    "status": "open",
+    "type": "bug"
   }
 }

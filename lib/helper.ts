@@ -1,7 +1,7 @@
 import "server-only";
 import fs from "fs";
 
-interface ticket {
+export interface ticket {
   id: number;
   name: string;
   status: string;
