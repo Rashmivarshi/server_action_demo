@@ -22,3 +22,20 @@ export async function deleteTicket(id: number) {
   writefile(tickets);
   revalidatePath("/");
 }
+
+export async function updateTicket(id: number, formData: FormData) {
+  const name = formData.get("name") as string;
+  const type = formData.get("type") as string;
+  const status = formData.get("status") as string;
+
+  const tickets = readfile();
+
+  if (!tickets[id]) {
+    throw new Error(`Ticket with ID ${id} does not exist.`);
+  }
+
+  tickets[id] = { ...tickets[id], name, type, status };
+  writefile(tickets);
+
+  revalidatePath("/");
+}
